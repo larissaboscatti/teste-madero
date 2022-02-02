@@ -16,12 +16,12 @@ export class UpdateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  atualizarUsuario(id){
+  atualizarUsuario(id,nome,email,genero,status){
     const usuario = {
-      name: "Larissa ",
-      email: 'larissaboscatt@hotmail.com',
-      gender: 'female',
-      status: 'active'
+      name: nome,
+      email: email,
+      gender: genero,
+      status: status
     };
     this.consultaUsuarios = this.usuarioService.UpdateUsuario(id, usuario);
   }
