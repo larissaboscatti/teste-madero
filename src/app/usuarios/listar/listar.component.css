@@ -1,0 +1,26 @@
+.fa-2x {
+    font-size: 2em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.table-gray{
+    background: #F2F6FA;
+}
+.btn-pink{
+    background: #E62EA8;
+}
+.title-table{
+    color: #BDC4CE;
+}
+.table td, .table th{
+    border-top-left-radius:.25rem;
+    border-top-right-radius:.25rem;
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 1px;
+}
