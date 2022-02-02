@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { UsuarioService} from './shared';
 import { ListarComponent } from './listar';
 import { CadastroComponent } from './cadastro';
-import { UpdateComponent } from './update/update.component';
+import { UpdateComponent } from './update';
 
 @NgModule({
   declarations: [

@@ -3,11 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { UsuarioRoutes } from './usuarios';
 
 export const routes: Routes = [
-	// { 
-	// 	path: '', 
-	// 	redirectTo: '/usuarios/listar', 
-	// 	pathMatch: 'full' 
-	// },
+	 { 
+	 	path: '', 
+	 	redirectTo: '/usuarios/listar', 
+	 	pathMatch: 'full' 
+	 },
 ...UsuarioRoutes
 ];
 

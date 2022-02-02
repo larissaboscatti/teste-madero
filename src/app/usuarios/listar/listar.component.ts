@@ -12,6 +12,7 @@ export class ListarComponent implements OnInit {
 
   usuarios: Usuario[];
   consultaUsuarios: Observable<UsuarioListReturn>;
+  novoUsuario: Usuario;
 
    constructor(private usuarioService: UsuarioService) {
       this.consultaUsuarios = usuarioService.getListUsuarios();
@@ -22,13 +23,5 @@ export class ListarComponent implements OnInit {
       this.usuarios = query.data;
      })
   }
-
-  // remover($event: any, usuario: Usuarios): void {
-  //   $event.preventDefault();
-  //   if (confirm('Deseja remover usuario "' + usuario.name + '"?')) {
-  //     this.usuarioService.remover(usuario.id);
-  //     this.usuario = this.listarTodos();
-  //   }
-  // }
 
 }

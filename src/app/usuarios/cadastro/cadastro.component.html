@@ -5,22 +5,22 @@
 			<form>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Nome</label>
-			  		<input type="text" class="form-control" id="name" placeholder="nome do usuário">
+			  		<input #name type="text" class="form-control" id="name" placeholder="nome do usuário">
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">E-mail</label>
-			  		<input type="email" class="form-control" id="email" placeholder="e-mail do usuário">
+			  		<input #email type="email" class="form-control" id="email" placeholder="e-mail do usuário">
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Gênero</label>
-			  		<input type="text" class="form-control" id="status" placeholder="gênero do usuário">
+			  		<input #status type="text" class="form-control" id="status" placeholder="gênero do usuário">
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Status</label>
-			  		<input type="text" class="form-control" id="gender" placeholder="status">
+			  		<input #genero type="text" class="form-control" id="gender" placeholder="status">
 				</div>
 				<div class="mb-3">
-			   	 	<button type="submit" class="btn btn-pink text-white">Cadastrar</button>
+			   	 	<button type="submit" class="btn btn-pink text-white" (click)="criarUsuario(name.value,email.value, genero.value, status.value)">Cadastrar</button>
 			 	 </div>
 			</form>
 		</div>

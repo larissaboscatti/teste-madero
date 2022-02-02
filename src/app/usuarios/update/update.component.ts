@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UsuarioListReturn, UsuarioService } from '..';
 
 @Component({
   selector: 'app-update',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateComponent implements OnInit {
 
-  constructor() { }
+  consultaUsuarios: Observable<UsuarioListReturn>;
+  
+  constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
   }
+
+  atualizarUsuario(id){
+    const usuario = {
+      name: "Larissa ",
+      email: 'larissaboscatt@hotmail.com',
+      gender: 'female',
+      status: 'active'
+    };
+    this.consultaUsuarios = this.usuarioService.UpdateUsuario(id, usuario);
+  }
+
 
 }
