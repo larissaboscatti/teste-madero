@@ -15,7 +15,7 @@ export const UsuarioRoutes: Routes = [
 	},
 
 	{
-		path: 'usuarios/update',
+		path: 'usuarios/update/:id',
 		component: UpdateComponent 
 	}
 

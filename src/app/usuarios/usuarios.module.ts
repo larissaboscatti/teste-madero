@@ -7,6 +7,7 @@ import { UsuarioService} from './shared';
 import { ListarComponent } from './listar';
 import { CadastroComponent } from './cadastro';
 import { UpdateComponent } from './update';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UpdateComponent } from './update';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers:[
   UsuarioService

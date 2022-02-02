@@ -2,25 +2,26 @@
 	<h3 class="mb-4 text-center">Cadastro de usuários</h3>
 	<div class="row d-flex justify-content-center">
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-			<form>
+			<form novalidate [formGroup]="form">
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Nome</label>
-			  		<input #name type="text" class="form-control" id="name" placeholder="nome do usuário">
+			  		<input #name type="text" class="form-control" id="name" placeholder="nome do usuário" formControlName="name" required>
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">E-mail</label>
-			  		<input #email type="email" class="form-control" id="email" placeholder="e-mail do usuário">
+			  		<input #email type="email" class="form-control" id="email" placeholder="e-mail do usuário" formControlName="email" required>
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Gênero</label>
-			  		<input #status type="text" class="form-control" id="status" placeholder="gênero do usuário">
+			  		<input #genero type="text" class="form-control" id="gender" placeholder="gênero do usuário" formControlName="gender">
+			  		
 				</div>
 				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Status</label>
-			  		<input #genero type="text" class="form-control" id="gender" placeholder="status">
+			  		<input #status type="text" class="form-control" id="status" placeholder="status do cadastro" formControlName="status">
 				</div>
 				<div class="mb-3">
-			   	 	<button type="submit" class="btn btn-pink text-white" (click)="criarUsuario(name.value,email.value, genero.value, status.value)">Cadastrar</button>
+			   	 	<button type="submit" class="btn btn-pink text-white" (click)="onSubmit()">Cadastrar</button>
 			 	 </div>
 			</form>
 		</div>

@@ -54,4 +54,8 @@ export class UsuarioService {
         })
     }
 
+    // remove(id){
+    //     return this.http.delete('https://gorest.co.in/public/v1/users/' + id ,this.httpOptions)
+    // }
+
 }

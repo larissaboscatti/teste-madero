@@ -4,10 +4,6 @@
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 			<form>
 				<div class="mb-3">
-			  		<label for="exampleFormControlInput1" class="form-label">Id</label>
-			  		<input #id type="text" class="form-control" id="id" placeholder="id do usuario">
-				</div>
-				<div class="mb-3">
 			  		<label for="exampleFormControlInput1" class="form-label">Nome</label>
 			  		<input #name type="text" class="form-control" id="name" placeholder="nome do usuário">
 				</div>
@@ -24,7 +20,7 @@
 			  		<input #genero type="text" class="form-control" id="gender" placeholder="status">
 				</div>
 				<div class="mb-3">
-			   	 	<button type="submit" (click)="atualizarUsuario(id.value,name.value,email.value, genero.value, status.value)" class=" btn btn-pink text-white">Atualizar</button>
+			   	 	<button type="submit" class=" btn btn-pink text-white">Atualizar</button>
 			 	 </div>
 			</form>
 		</div>
